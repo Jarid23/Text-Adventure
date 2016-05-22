@@ -2,6 +2,7 @@
 # This is a simple text adventure game
 
 def start ():
+
     global keys
     keys = 0
     print (" Welcome to the game, type 'start' to begin. ")
@@ -9,6 +10,7 @@ def start ():
     prompt_sta ()
 
 def prompt_sta ():
+
     prompt_0 = input("Type a command : ")
     try :
         if prompt_0 == 'Start' :
@@ -24,10 +26,12 @@ def prompt_sta ():
         prompt_sta()
 
 def outhouse ():
+
     print("You are now outside.")
     prompt_outside()
 
 def prompt_outside ():
+
     prompt_1 = input("You may do the following : Enter House, Look, Trash Flowers, or Exit : ")
     try:
         if prompt_1 == "Enter House":
@@ -54,11 +58,13 @@ def prompt_outside ():
         prompt_outside()
 
 def hallway():
+
     print("You are in a hallway")
     print()
     prompt_hallway ()
 
 def prompt_hallway ():
+
     prompt_2 = input("In the Hallway you can : E (lounge), N (bedroom) or W (kitchen):")
     try:
         if prompt_2 == 'E':
@@ -77,11 +83,13 @@ def prompt_hallway ():
         prompt_hallway()
 
 def bedroom():
+
     print("You are in a bedroom, you can 'S' to hallway or 'Read Note'")
     print()
     prompt_bedroom()
 
 def prompt_bedroom ():
+
     prompt_5 = input("What would you like to do ('S' to hallway or 'Read Note' ? : ")
     try:
         if prompt_5 == 'S':
@@ -100,6 +108,7 @@ def prompt_bedroom ():
 
 
 def lounge ():
+
     global keys
     try:
         if keys == 1:
@@ -116,9 +125,11 @@ def lounge ():
         hallway()
 
 def prompt_victory():
+
     print("YOU WON!!! You made it to the lounge with all the drinks.")
 
 def prompt_lounge():
+
     prompt_3 = input("Type a command: ")
     try:
         if prompt_3 == 'W':
@@ -136,11 +147,13 @@ def prompt_lounge():
         hallway()
 
 def kitchen ():
+
     print("You are in a kitchen. You notice a key and a mysterious looking door to the west.")
     print()
     prompt_kitchen ()
 
 def prompt_kitchen():
+
     global keys
     prompt_4 = input("In the Kitchen you can: 'E' (hallway) , 'W' (mystery) or, 'Pick up Key' : ")
     try:
