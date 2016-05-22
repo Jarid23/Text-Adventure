@@ -1,5 +1,6 @@
 # Text-Adventure
 # This is a simple text adventure game
+
 def start ():
     global keys
     keys = 0
@@ -21,7 +22,6 @@ def prompt_sta ():
         print("Type 'Start' not that other BS.")
         print()
         prompt_sta()
-
 
 def outhouse ():
     print("You are now outside.")
